@@ -19,7 +19,7 @@
 | **Framework**            | .NET 8 (C# 12)                           |
 | **API Style**            | Minimal API                              |
 | **Testing**              | NUnit 3                                  |
-| **Docs**                 | Swagger / OpenAPI                        |
+| **Docs**                 | Swagger                                  |
 | **Dependency Injection** | Microsoft.Extensions.DependencyInjection |
 
 ---
@@ -39,7 +39,7 @@ dotnet build
 Run Project
 
 ```bash
-dotnet run
+dotnet run --project .\NgernTidLorTestProject\
 ```
 
 เปิดใช้งาน Swagger UI
