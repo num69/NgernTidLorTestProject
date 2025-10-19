@@ -50,6 +50,5 @@ app.MapPost("/calculator", (CalculatorBody req, ExpressionEvaluator evaluator) =
 
 app.Run();
 
-// ---------- Contracts ----------
 record CalculatorBody(string Expression);
 
