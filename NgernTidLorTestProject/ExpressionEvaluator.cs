@@ -21,7 +21,7 @@ namespace NgernTidLorTestProject
             return value;
         }
 
-        private string Normalize(string expression)
+        private static string Normalize(string expression)
         {
             IEnumerable<char> normalizeChars = expression
                 .Where(c => !char.IsWhiteSpace(c));
