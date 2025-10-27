@@ -32,7 +32,7 @@ app.MapPost("/calculator", (CalculatorBody req, ExpressionEvaluator evaluator) =
 {
     try
     {
-        var result = evaluator.Evaluate(req.Expression);
+        double result = evaluator.Evaluate(req.Expression);
         //var useCompute = Convert.ToDouble(new DataTable().Compute(req.Expression, ""));
         return Results.Ok(new { result });
     }

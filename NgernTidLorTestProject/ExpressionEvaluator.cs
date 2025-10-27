@@ -12,7 +12,6 @@ namespace NgernTidLorTestProject
             if (string.IsNullOrWhiteSpace(expression))
                 throw new ArgumentException("Expression is empty.");
 
-            // เตรียมอินพุต (ตัดช่องว่าง)
             _expression = Normalize(expression);
             _position = 0;
 
@@ -22,9 +21,8 @@ namespace NgernTidLorTestProject
             return value;
         }
 
-        private static string Normalize(string expression)
+        private string Normalize(string expression)
         {
-            //ลบช่องว่าง
             IEnumerable<char> normalizeChars = expression
                 .Where(c => !char.IsWhiteSpace(c));
 
